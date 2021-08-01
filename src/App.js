@@ -13,6 +13,9 @@ import recipe from './assets/recipe.png';
 import ucla from './assets/ucla.png';
 import troy from './assets/troy.png';
 import profile from './assets/profile.jpg';
+import github from './assets/github.png';
+import linkedin from './assets/linkedin.png';
+import resume from './assets/resume.png';
 
 export default class App extends Component{
 
@@ -58,6 +61,11 @@ export default class App extends Component{
               &nbsp;You can scroll through my education, experience, projects, and skills, or use the sidebar
               to navigate to any specific section.
             </p>
+            <div class="links">
+              <a href = 'https://github.com/chirag-singh1'><img src = { github }></img></a>
+              <a href = 'https://www.linkedin.com/in/chirag-singh/'><img src = { linkedin }></img></a>
+              <a href = 'https://drive.google.com/file/d/1zvpNN8OjslRZEiyUhVsLpTpzVg-Zi8ns/view?usp=sharing'><img src = { resume }></img></a>
+            </div>
           </div>
           <div class="Education">
             <div class="SectionTitle" id="education"  ref={this.educationDiv}>EDUCATION</div>
@@ -85,7 +93,12 @@ export default class App extends Component{
         <div class="Row"  ref={this.experienceDiv}>
           <Tile title="MyKaarma" role="Software Development Intern"
                 location="Long Beach, CA" dates="June 2021-September 2021"
-                image={ mykaarma } description={[]}
+                image={ mykaarma } description={[
+                  'Designed and implemented scalable Java API for queueing and processing image object detection requests',
+                  'Designed and implemented Angular AI demo site to showcase car damage detection model',
+                  'Trained and evaluated CNN-based object detection model to identify scratches, dents, and shattered glass in images',
+                  'Developed and integrated Pybossa crowdsourcing game to gather annotated images'
+                ]}
           />
           <Tile title="Unmanned Aerial Systems at UCLA" role="Docking Software Team Member"
                 location="Los Angeles, CA" dates="September 2020-Present"

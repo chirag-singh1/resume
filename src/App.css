@@ -63,7 +63,7 @@ body{
   flex-direction: column;
   background-color: #545454;
   align-items: center;
-  border-radius: 50px;
+  /*border-radius: 50px;*/
   margin-left: 100px;
   margin-top: 15px;
   width: 525px;
@@ -82,7 +82,7 @@ h1{
   border-radius: 50px;
   margin-left: 50px;
   margin-right: 50px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .Intro p{
@@ -90,4 +90,18 @@ h1{
   margin-right: 25px;
   margin-bottom: 10px;
   color: #f7fff7;
+  text-align: center;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.links img{
+  width: 80px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
